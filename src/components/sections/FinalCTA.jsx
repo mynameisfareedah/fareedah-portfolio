@@ -1,0 +1,2 @@
+function FinalCTA({ content }) { return <section className="final-cta section-pad" id="contact"><div className="shell final-cta-inner"><p className="eyebrow">Start a conversation</p><h2>Have a project, opportunity, or idea in mind?</h2><p>Let&apos;s build something useful, thoughtful and impactful.</p><a className="button button-light" href={`mailto:${content.details.emails[0]}`}>Get In Touch <span aria-hidden="true">↗</span></a></div></section> }
+export default FinalCTA

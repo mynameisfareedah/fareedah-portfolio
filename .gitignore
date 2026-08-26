@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+*.env
+!.env.example
+General Fareedah Oluremi Hussain CV.docx
+PROFESSIONAL PICTURE.jpg
+DAHI LOGO.png
+OAKCHERRY LOGO.png
+BIRTHDAY CARD FRONT.jpg
+BIRTHDAY CARD BACK.jpg
+PAMPHLET FRONT.jpeg
+PAMPHLET BACK.jpeg
+STATE MANAGER CARD.jpeg
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+RECEIPT.jpeg
+Downloads/
+Downloads - Copy/
+final mum-61st-birthday-booklet.pdf

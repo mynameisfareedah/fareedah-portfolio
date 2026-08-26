@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>FHY</title>
+  <rect width="64" height="64" rx="4" fill="#20221f"/>
+  <text x="32" y="38" fill="#f6f4ef" font-family="Georgia, serif" font-size="15" font-weight="600" text-anchor="middle">FHY</text>
+  <path d="M16 48h32" stroke="#9e4d3b" stroke-width="3"/>
+</svg>

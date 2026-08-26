@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">KoboToolbox digital data collection workflow</title>
+  <desc id="desc">Questionnaire flows to digital data collection, structured data, and analysis.</desc>
+  <rect width="800" height="520" fill="#eeebe3"/>
+  <path d="M120 260h560" stroke="#9e4d3b" stroke-width="2" stroke-dasharray="8 10"/>
+  <g fill="#f6f4ef" stroke="#20221f" stroke-width="2">
+    <rect x="48" y="178" width="150" height="164"/>
+    <rect x="240" y="178" width="150" height="164"/>
+    <rect x="432" y="178" width="150" height="164"/>
+    <rect x="624" y="178" width="128" height="164"/>
+  </g>
+  <g fill="#9e4d3b">
+    <circle cx="84" cy="214" r="7"/><circle cx="276" cy="214" r="7"/><circle cx="468" cy="214" r="7"/><circle cx="658" cy="214" r="7"/>
+  </g>
+  <g fill="#20221f" font-family="Georgia, serif" font-size="24" text-anchor="middle">
+    <text x="123" y="264">Questionnaire</text>
+    <text x="315" y="250">Digital</text><text x="315" y="280">collection</text>
+    <text x="507" y="250">Structured</text><text x="507" y="280">data</text>
+    <text x="688" y="264">Analysis</text>
+  </g>
+  <g fill="#6e7069" font-family="monospace" font-size="12" text-anchor="middle">
+    <text x="123" y="310">01</text><text x="315" y="310">02</text><text x="507" y="310">03</text><text x="688" y="310">04</text>
+  </g>
+</svg>
