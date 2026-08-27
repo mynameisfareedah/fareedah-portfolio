@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function ProjectVisual({ project, index }) {
   return <div className={`projects-visual projects-visual-${(index % 2) + 1}`} aria-hidden={project.image ? undefined : 'true'}>
     <span className="project-count">{String(index + 1).padStart(2, '0')}</span>
-    {project.image ? <img className="project-card-image project-logo" src={project.image} alt={`${project.name} logo`} /> : <div className="projects-placeholder"><strong>{project.category}</strong><span>Visual identity</span></div>}
+    {project.image ? <img className="project-card-image project-logo" src={project.image} alt={project.imageAlt || `${project.name} project cover`} /> : <div className="projects-placeholder"><strong>{project.category}</strong><span>Visual identity</span></div>}
   </div>
 }
 

@@ -1,6 +1,6 @@
-# Fareedah Hussain-Yusuf Portfolio
+# Fareedah Hussain Portfolio
 
-Personal professional portfolio for Fareedah Hussain-Yusuf, a Full-Stack Developer and Digital Technology & Operations Specialist. The site presents verified technical work, digital systems, operations experience, and data skills without inventing project details.
+Personal professional portfolio for Fareedah Hussain, a Full-Stack Developer and Digital Technology & Operations Specialist. The site presents verified technical work, digital systems, operations experience, and data skills without inventing project details.
 
 ## Stack
 
@@ -16,7 +16,7 @@ Personal professional portfolio for Fareedah Hussain-Yusuf, a Full-Stack Develop
 - `src/content/` central site and project content
 - `src/components/pages/` page-level views for About, Experience, Projects, Skills, Contact, and case studies
 - `src/index.css` global design tokens and Tailwind entry point
-- `public/favicon-fhy.svg` FHY favicon asset
+- `public/favicon-fh.svg` FH favicon asset
 
 ## Local development
 

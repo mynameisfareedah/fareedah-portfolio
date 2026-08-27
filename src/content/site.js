@@ -1,6 +1,6 @@
 import profileImage from '../assets/fareedah-hussain.jpg'
-import dahiLogo from '../assets/dahi-logo.png'
-import oakCherryKraftLogo from '../assets/oak-cherry-kraft-logo.png'
+import dahiCover from '../assets/dahi-cover.png'
+import oakCherryKraftCover from '../assets/oak-cherry-kraft-cover.png'
 import koboSurveyVisual from '../assets/projects/kobotoolbox-survey.svg'
 import birthdayCardBack from '../assets/creative/birthday-card-back.jpg'
 import birthdayCardFront from '../assets/creative/birthday-card-front.jpg'
@@ -11,7 +11,7 @@ import proofOfPaymentReceipt from '../assets/creative/proof-of-payment-receipt.j
 
 export const siteContent = {
   identity: {
-    name: 'Fareedah Hussain-Yusuf',
+    name: 'Fareedah Hussain',
     title: 'Full-Stack Developer | Digital Technology & Operations Specialist',
     description: 'IT and Digital Technology professional working across frontend and backend development, digital systems, operations, and data analysis.',
     profileImage,
@@ -22,26 +22,33 @@ export const siteContent = {
     { label: 'Experience', path: '/experience' },
     { label: 'Projects', path: '/projects' },
     { label: 'Skills', path: '/skills' },
+    { label: 'Creative Work', path: '/creative-work' },
     { label: 'Contact', path: '/contact' },
   ],
   seo: {
-    defaultDescription: 'Fareedah Hussain-Yusuf is a Full-Stack Developer and Digital Technology & Operations Specialist working across development, systems, operations, and data.',
+    defaultDescription: 'Fareedah Hussain is a Full-Stack Developer and Digital Technology & Operations Specialist working across development, systems, operations, and data.',
     pages: {
-      '/': 'Fareedah Hussain-Yusuf is a Full-Stack Developer and Digital Technology & Operations Specialist working across development, digital systems, operations, and data.',
-      '/about': 'Learn about Fareedah Hussain-Yusuf\'s multidisciplinary work across development, digital systems, operations, and data.',
-      '/experience': 'Explore Fareedah Hussain-Yusuf\'s experience across technology, digital systems, operations, and support.',
-      '/projects': 'Explore selected digital projects by Fareedah Hussain-Yusuf across websites, systems, and technology-enabled work.',
-      '/skills': 'Explore Fareedah Hussain-Yusuf\'s skills across frontend, backend application development, systems, operations, data, and tools.',
-      '/contact': 'Contact Fareedah Hussain-Yusuf in Lagos, Nigeria about digital projects, technology support, systems work, or collaboration.',
-      '/creative-work': 'Selected graphic design and visual communication work by Fareedah Hussain-Yusuf, spanning digital initiatives, health education, events, publications, and professional communication.',
+      '/': 'Fareedah Hussain is a Full-Stack Developer and Digital Technology & Operations Specialist working across development, digital systems, operations, and data.',
+      '/about': 'Learn about Fareedah Hussain\'s multidisciplinary work across development, digital systems, operations, and data.',
+      '/experience': 'Explore Fareedah Hussain\'s experience across technology, digital systems, operations, and support.',
+      '/projects': 'Explore selected digital projects by Fareedah Hussain across websites, systems, and technology-enabled work.',
+      '/skills': 'Explore Fareedah Hussain\'s skills across frontend, backend application development, systems, operations, data, and tools.',
+      '/contact': 'Contact Fareedah Hussain in Lagos, Nigeria about digital projects, technology support, systems work, or collaboration.',
+      '/creative-work': 'Selected graphic design and visual communication work by Fareedah Hussain, spanning digital initiatives, health education, events, publications, and professional communication.',
     },
   },
   hero: {
     eyebrow: 'IT • DIGITAL SYSTEMS • FRONTEND • DATA',
     heading: 'Building digital experiences and systems that make work better.',
-    text: 'I\'m Fareedah Hussain-Yusuf, a multidisciplinary digital professional combining frontend development, digital operations, technology, and data to build useful experiences and improve the way people and organisations work.',
+    text: 'I\'m Fareedah Hussain, a multidisciplinary digital professional combining frontend development, digital operations, technology, and data to build useful experiences and improve the way people and organisations work.',
     expertise: ['Frontend development', 'Digital operations', 'Data analytics'],
   },
+  impact: [
+    { value: '416', label: 'Research submissions' },
+    { value: '96', label: 'Questionnaire questions' },
+    { value: '15–20', label: 'Minute estimated completion' },
+    { value: '4+', label: 'Years of professional experience' },
+  ],
   about: {
     eyebrow: 'ABOUT ME',
     heading: 'Technology, systems, and thoughtful digital problem-solving.',
@@ -49,7 +56,7 @@ export const siteContent = {
     story: 'My work is not limited to writing code. I understand workflows, systems, users, technology, and information, then bring those perspectives together to support practical solutions. This includes troubleshooting and maintaining technology environments, supporting digital platforms and organisational systems, developing web interfaces, managing data, and producing clear reports.',
     approach: ['Understand the problem', 'Structure the solution', 'Build thoughtfully', 'Test and refine', 'Improve continuously'],
     profile: {
-      name: 'Fareedah Hussain-Yusuf',
+      name: 'Fareedah Hussain',
       title: 'Full-Stack Developer | Digital Technology & Operations Specialist',
       description: 'I bring together frontend and backend development, digital operations, systems, data, and user experience to support practical technology solutions.',
       image: profileImage,
@@ -77,6 +84,7 @@ export const siteContent = {
       { label: 'Data', detail: 'Analysis, organisation, visualisation, reporting, and collection workflows' },
       { label: 'Systems', detail: 'Digital operations, platform support, troubleshooting, and coordination' },
     ],
+    roots: ['Technology', 'Data', 'Digital Systems', 'Operations', 'Creativity', 'Continuous Learning'],
     groups: [
       {
         number: '01',
@@ -137,7 +145,8 @@ export const siteContent = {
         description: 'A health-focused digital platform and website for sharing content, resources, outreach information, and community engagement.',
         purpose: 'The website provides a digital home for DAHI\'s health content, resources, outreach information, and community engagement.',
         tags: [],
-        image: dahiLogo,
+        image: dahiCover,
+        imageAlt: 'Doc Adi Health Initiative project cover',
         role: 'Full-Stack Developer',
         contribution: 'Worked across frontend development, backend and application development, system functionality, responsive user interface, and integration of the different parts of the application.',
         frontend: ['Responsive web development', 'User interface implementation', 'Content and resource presentation'],
@@ -155,7 +164,8 @@ export const siteContent = {
         description: 'A business website for a handcrafted rustic wood furniture business.',
         purpose: 'The website presents Oak Cherry Kraft\'s handcrafted rustic wood furniture business and its brand in a clear digital experience.',
         tags: [],
-        image: oakCherryKraftLogo,
+        image: oakCherryKraftCover,
+        imageAlt: 'Oak Cherry Kraft project cover',
         role: 'Full-Stack Developer',
         contribution: 'Worked across frontend development, backend and application development, system functionality, responsive user interface, and integration of the different parts of the application.',
         tagline: 'Transforming spaces with nature’s aura',

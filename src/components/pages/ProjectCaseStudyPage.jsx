@@ -4,7 +4,7 @@ function ProjectVisual({ project }) {
   return <div className="case-visual">{project.image ? <img className="project-card-image project-logo" src={project.image} alt={project.imageAlt || `${project.name} logo`} /> : <div className="case-placeholder"><span>{project.category}</span><strong>Visual identity</strong></div>}</div>
 }
 
-function OptionalList({ label, items }) {
+function OptionalList({ label, items = [] }) {
   if (!items.length) return null
   return <section className="case-detail"><p className="eyebrow">{label}</p><ul>{items.map((item) => <li key={item}>{item}</li>)}</ul></section>
 }

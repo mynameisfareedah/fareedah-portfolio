@@ -8,7 +8,6 @@ import ProjectsPage from './components/pages/ProjectsPage.jsx'
 import ProjectCaseStudyPage from './components/pages/ProjectCaseStudyPage.jsx'
 import SkillsPage from './components/pages/SkillsPage.jsx'
 import ScrollToTop from './components/navigation/ScrollToTop.jsx'
-import Capabilities from './components/sections/Capabilities.jsx'
 import ExperiencePreview from './components/sections/ExperiencePreview.jsx'
 import ExpertiseStrip from './components/sections/ExpertiseStrip.jsx'
 import FeaturedProjects from './components/sections/FeaturedProjects.jsx'
@@ -18,8 +17,10 @@ import { siteContent } from './content/site.js'
 import './index.css'
 
 function HomePage() {
+  const creativeItems = siteContent.creativeWork.items.filter((item) => item.featured).slice(0, 3)
+
   return (
-    <><Hero content={{ ...siteContent.hero, title: siteContent.identity.title }} /><ExpertiseStrip items={siteContent.expertise} /><Capabilities items={siteContent.capabilities} /><FeaturedProjects projects={siteContent.projects.items} /><section className="beyond-code section-pad"><div className="shell beyond-code-inner"><p className="eyebrow">Beyond the code</p><h2>Visual communication is part of useful digital work.</h2><p>Digital work is not only about systems and interfaces. I also create visual communication materials that help ideas, initiatives, and information connect with people.</p><Link className="button" to="/creative-work">View Creative Work <span aria-hidden="true">↗</span></Link></div></section><ExperiencePreview experience={siteContent.experience} /><FinalCTA content={siteContent.contact} /></>
+    <div className="home-page"><Hero content={{ ...siteContent.hero, title: 'FULL-STACK DEVELOPMENT · DIGITAL SYSTEMS · DATA', heading: 'I build digital experiences, systems and solutions that make work better.', text: 'I combine technology, digital operations and data to create practical solutions that help people and organisations work better.', profileImage: siteContent.identity.profileImage }} /><ExpertiseStrip items={siteContent.expertise} /><section className="home-positioning section-pad"><div className="shell home-positioning-inner"><p className="eyebrow">01 / The practice</p><h2>Technology with purpose.</h2><p>I work across digital experiences, systems, operations and data — bringing technical thinking and practical problem-solving together to create work that is useful, clear and sustainable.</p><span className="home-orbit" aria-hidden="true" /></div></section><section className="home-practice section-pad"><div className="shell home-practice-inner"><div><p className="eyebrow">02 / A multidisciplinary practice</p><h2>Many perspectives. One connected practice.</h2></div><div className="home-practice-copy"><p>I bring together technical thinking, operational awareness and visual clarity to help people and organisations work better.</p><Link className="text-link" to="/skills">Explore my capabilities <span aria-hidden="true">↗</span></Link></div></div></section><FeaturedProjects projects={siteContent.projects.items} /><section className="beyond-code section-pad"><div className="shell"><div className="beyond-code-copy"><p className="eyebrow">03 / Beyond the interface</p><h2>Visual communication is part of useful digital work.</h2><p>I also create visual materials that help ideas, initiatives and information connect with people.</p><Link className="text-link" to="/creative-work">Explore Creative Work <span aria-hidden="true">↗</span></Link></div><div className="home-creative-preview">{creativeItems.map((item) => <img key={item.id} src={item.image} alt={item.alt} loading="lazy" decoding="async" />)}</div></div></section><ExperiencePreview experience={siteContent.experience} /><FinalCTA content={siteContent.contact} /></div>
   )
 }
 
