@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
+import ProjectIdentityVisual from '../projects/ProjectIdentityVisual.jsx'
 
 function ProjectVisual({ project, index }) {
-  return <div className={`projects-visual projects-visual-${(index % 2) + 1}`} aria-hidden={project.image ? undefined : 'true'}>
+  return <div className={`projects-visual projects-visual-${(index % 2) + 1} visual-tone-${project.visualTone || 'default'}`}>
     <span className="project-count">{String(index + 1).padStart(2, '0')}</span>
-    {project.image ? <img className="project-card-image project-logo" src={project.image} alt={project.imageAlt || `${project.name} project cover`} /> : <div className="projects-placeholder"><strong>{project.category}</strong><span>Visual identity</span></div>}
+    <ProjectIdentityVisual project={project} />
   </div>
 }
 

@@ -1,7 +1,10 @@
 import profileImage from '../assets/fareedah-hussain.jpg'
 import dahiCover from '../assets/dahi-cover.png'
+import dahiLogo from '../assets/dahi-logo.png'
 import oakCherryKraftCover from '../assets/oak-cherry-kraft-cover.png'
+import oakCherryKraftLogo from '../assets/oak-cherry-kraft-logo.png'
 import koboSurveyVisual from '../assets/projects/kobotoolbox-survey.svg'
+import invomaxCover from '../../new invomax logo.jpeg'
 import birthdayCardBack from '../assets/creative/birthday-card-back.jpg'
 import birthdayCardFront from '../assets/creative/birthday-card-front.jpg'
 import dahiPamphletBack from '../assets/creative/dahi-health-pamphlet-back.jpeg'
@@ -139,6 +142,36 @@ export const siteContent = {
     },
     items: [
       {
+        slug: 'invomax',
+        name: 'Invomax',
+        category: 'Web Application / Productivity Tool',
+        description: 'Invomax is a modern invoice creation tool designed to make professional invoicing faster, simpler, and more accessible for individuals and small businesses.',
+        seoTitle: 'Invomax — Invoice Web Application | Fareedah Hussain',
+        seoDescription: 'Invomax is a modern invoice creation web application designed to make professional invoicing faster and easier.',
+        problem: 'Creating a professional invoice can feel unnecessarily slow when people only need a straightforward way to enter details, calculate totals, and share the finished document.',
+        purpose: 'Individuals and small businesses need a clear, professional invoice without the friction of setting up a larger accounting system.',
+        idea: 'Create a focused browser-based workspace that makes it possible to move from business details to a professional invoice in minutes.',
+        tags: ['Frontend Development', 'Product Development', 'Digital Systems'],
+        image: invomaxCover,
+        logo: invomaxCover,
+        visualTone: 'invomax',
+        imageAlt: 'Invomax project cover',
+        role: 'Full-Stack Developer',
+        contribution: 'Built a focused invoice creation experience covering invoice entry, local saving, invoice management, live preview, and document actions.',
+        whatBuilt: 'A browser-based invoice workspace for creating, saving, reviewing, and managing professional invoices.',
+        frontend: ['Invoice creation workflow', 'Responsive form and live preview', 'Invoice library and filtering experience'],
+        backend: [],
+        features: ['Business and customer details', 'Line items with quantity and unit price', 'Currency, dates, status, discounts, VAT, and additional charges', 'Local invoice saving and invoice library management', 'Live preview with PDF download, printing, WhatsApp, and email actions'],
+        userExperience: 'The flow starts with the essential business information, keeps optional customer and payment details available when needed, and shows the invoice preview alongside the editing workspace.',
+        technicalImplementation: 'The application stores invoices locally on the device, updates the invoice preview as details change, and provides browser-based actions for downloading, printing, and sharing the finished invoice.',
+        considerations: 'The main consideration was balancing a quick creation path with the detail required for a professional invoice, while keeping saved data understandable and accessible without an account.',
+        technologies: [],
+        highlights: [],
+        outcome: 'A practical invoice creation tool that helps individuals and small businesses prepare professional invoices quickly and manage them from one local workspace.',
+        link: 'https://invomax.netlify.app/',
+        linkLabel: 'View Live Project',
+      },
+      {
         slug: 'dahi',
         name: 'Doc Adi Health Initiative (DAHI) Website',
         category: 'Digital health platform',
@@ -146,6 +179,8 @@ export const siteContent = {
         purpose: 'The website provides a digital home for DAHI\'s health content, resources, outreach information, and community engagement.',
         tags: [],
         image: dahiCover,
+        logo: dahiLogo,
+        visualTone: 'dahi',
         imageAlt: 'Doc Adi Health Initiative project cover',
         role: 'Full-Stack Developer',
         contribution: 'Worked across frontend development, backend and application development, system functionality, responsive user interface, and integration of the different parts of the application.',
@@ -165,6 +200,8 @@ export const siteContent = {
         purpose: 'The website presents Oak Cherry Kraft\'s handcrafted rustic wood furniture business and its brand in a clear digital experience.',
         tags: [],
         image: oakCherryKraftCover,
+        logo: oakCherryKraftLogo,
+        visualTone: 'oak-cherry-kraft',
         imageAlt: 'Oak Cherry Kraft project cover',
         role: 'Full-Stack Developer',
         contribution: 'Worked across frontend development, backend and application development, system functionality, responsive user interface, and integration of the different parts of the application.',
@@ -189,6 +226,8 @@ export const siteContent = {
         purpose: 'The project translated research requirements into a structured electronic survey instrument for consistent interview-based data collection across participating Nigerian Military Hospitals.',
         tags: ['KoboToolbox'],
         image: koboSurveyVisual,
+        visualType: 'research',
+        visualTone: 'research',
         role: 'Digital Data Collection & Data Analysis',
         contribution: 'Contributed across digital questionnaire development, digital data collection, data management, and analysis support using KoboToolbox/KoboCollect.',
         questionnaireDesign: ['Designed and structured the digital questionnaire for the research study', 'Created a 96-question interview-based questionnaire', 'Structured questions and response options for standardized interview administration', 'Configured and deployed the survey using KoboToolbox'],

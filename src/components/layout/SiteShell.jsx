@@ -50,9 +50,9 @@ function SiteShell({ content, children }) {
       '/creative-work': 'Graphic Design & Creative Work | Fareedah Hussain',
     }
     const project = content.projects.items.find((item) => location.pathname === `/projects/${item.slug}`)
-    document.title = project ? `${project.name} | Fareedah Hussain` : titles[location.pathname] || 'Fareedah Hussain | Portfolio'
+    document.title = project?.seoTitle || (project ? `${project.name} | Fareedah Hussain` : titles[location.pathname] || 'Fareedah Hussain | Portfolio')
     const description = document.querySelector('meta[name="description"]')
-    if (description) description.setAttribute('content', project?.description || content.seo.pages[location.pathname] || content.seo.defaultDescription)
+    if (description) description.setAttribute('content', project?.seoDescription || project?.description || content.seo.pages[location.pathname] || content.seo.defaultDescription)
   }, [content.projects.items, content.seo.defaultDescription, content.seo.pages, location.pathname])
 
   return (
