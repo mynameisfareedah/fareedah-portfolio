@@ -465,7 +465,7 @@ h2 { font-size: clamp(2.6rem, 4.5vw, 4.8rem); }
 .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(340px, .82fr); gap: 72px; }
 .hero-image-wrap { inset: 0 28px 48px 0; border-color: var(--ink); background: #d8d0c4; }
 .hero-image-wrap::before { border-color: rgb(165 82 62 / 50%); }
-.hero-image-wrap img { width: auto; max-width: 78%; height: 90%; object-fit: contain; }
+.hero-image-wrap img { width: auto; max-width: 78%; height: 90%; object-fit: cover; object-position: center 32%; }
 .expertise-strip { background: var(--ink); border-color: rgb(245 240 232 / 22%); }
 .expertise-list span { color: var(--paper); }
 .expertise-list b { color: #d8a76b; }

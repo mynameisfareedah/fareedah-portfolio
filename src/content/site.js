@@ -1,4 +1,4 @@
-import profileImage from '../assets/fareedah-hussain.jpg'
+import profileImage from '../../NEW PROFESSIONAL PHOTO.jpeg'
 import dahiCover from '../assets/dahi-cover.png'
 import dahiLogo from '../assets/dahi-logo.png'
 import oakCherryKraftCover from '../assets/oak-cherry-kraft-cover.png'
