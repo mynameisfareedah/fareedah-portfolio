@@ -953,13 +953,22 @@ body::before { position: fixed; z-index: -1; inset: 0; background: radial-gradie
 .project-art.visual-tone-dahi, .projects-visual.visual-tone-dahi { background: radial-gradient(circle at 50% 46%, rgb(117 24 101 / 34%), transparent 66%), rgb(12 8 18 / 84%); }
 .project-art.visual-tone-oak-cherry-kraft, .projects-visual.visual-tone-oak-cherry-kraft { background: radial-gradient(circle at 50% 46%, rgb(87 47 24 / 42%), transparent 66%), rgb(12 10 8 / 86%); }
 .project-art.visual-tone-research, .projects-visual.visual-tone-research { background: radial-gradient(circle at 50% 46%, rgb(22 96 105 / 32%), transparent 66%), rgb(7 14 19 / 86%); }
+.project-art.visual-tone-weekflow, .projects-visual.visual-tone-weekflow, .case-visual.visual-tone-weekflow { background: radial-gradient(circle at 50% 46%, rgb(45 124 120 / 34%), transparent 66%), rgb(7 14 19 / 86%); }
+.weekflow-project-visual { position: relative; z-index: 1; display: grid; width: 100%; gap: 14px; padding: clamp(18px, 4vw, 36px); }
+.weekflow-project-brand { display: flex; min-width: 0; align-items: center; gap: 12px; color: var(--paper); }
+.weekflow-project-brand img { display: block; width: 64px; height: 40px; object-fit: contain; }
+.weekflow-project-brand strong { font-family: var(--display); font-size: clamp(1.15rem, 2.5vw, 1.6rem); font-weight: 500; }
+.weekflow-project-screenshot { display: block; width: 100%; height: auto; max-height: 310px; object-fit: contain; object-position: center; border: 1px solid rgb(244 241 234 / 12%); box-shadow: 0 18px 34px rgb(0 0 0 / 30%); transition: transform .3s ease, box-shadow .3s ease; }
+.projects-visual:hover .weekflow-project-screenshot, .project-art:hover .weekflow-project-screenshot { transform: translateY(-4px); box-shadow: 0 22px 40px rgb(0 0 0 / 42%); }
+.case-visual .weekflow-project-visual { max-width: 1200px; }
+.case-visual .weekflow-project-screenshot { max-height: none; }
 .project-art .project-logo, .projects-visual .project-logo { position: relative; z-index: 1; width: min(84%, 390px); height: min(84%, 285px); margin: auto; object-fit: contain; filter: drop-shadow(0 18px 28px rgb(0 0 0 / 30%)); transition: transform .3s ease, filter .3s ease; }
 .project-art:hover .project-logo, .projects-visual:hover .project-logo { transform: translateY(-4px) scale(1.025); filter: drop-shadow(0 22px 34px rgb(0 0 0 / 42%)); }
 .research-identity { position: relative; z-index: 1; display: grid; width: min(80%, 450px); min-height: 190px; align-content: center; gap: 17px; padding: 30px; border: 1px solid rgb(122 210 203 / 25%); background: rgb(5 17 22 / 42%); box-shadow: 0 18px 50px rgb(0 0 0 / 25%); }
 .research-identity span { color: rgb(122 210 203 / 82%); font-family: var(--mono); font-size: .62rem; text-transform: uppercase; letter-spacing: .1em; }
 .research-identity strong { max-width: 360px; color: var(--paper); font-family: var(--display); font-size: clamp(1.45rem, 3vw, 2.25rem); font-weight: 500; line-height: 1.12; }
 .research-identity i { position: absolute; right: 22px; bottom: 17px; color: rgb(122 210 203 / 68%); font-family: var(--mono); font-size: 1.4rem; font-style: normal; }
-@media (max-width: 480px) { .project-art .project-logo, .projects-visual .project-logo { width: 86%; height: 80%; }.research-identity { width: 82%; min-height: 165px; padding: 23px; }.research-identity strong { font-size: 1.35rem; } }
+@media (max-width: 480px) { .project-art .project-logo, .projects-visual .project-logo { width: 86%; height: 80%; }.research-identity { width: 82%; min-height: 165px; padding: 23px; }.research-identity strong { font-size: 1.35rem; }.weekflow-project-visual { gap: 10px; padding: 14px; }.weekflow-project-brand img { width: 52px; height: 34px; }.weekflow-project-screenshot { max-height: 220px; } }
 .tree-trunk-label strong { color: var(--ink); }
 .nav-inner { gap: clamp(1rem, 3vw, 3rem); }
 .nav-menu { gap: clamp(2rem, 3.2vw, 3rem); }

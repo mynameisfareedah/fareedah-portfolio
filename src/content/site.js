@@ -5,6 +5,8 @@ import oakCherryKraftCover from '../assets/oak-cherry-kraft-cover.png'
 import oakCherryKraftLogo from '../assets/oak-cherry-kraft-logo.png'
 import koboSurveyVisual from '../assets/projects/kobotoolbox-survey.svg'
 import invomaxCover from '../../new invomax logo.jpeg'
+import weekflowScreenshot from '../../WEEKFLOW HOMEPAGE.png'
+import weekflowLogo from '../../weekflow logo.jfif'
 import birthdayCardBack from '../assets/creative/birthday-card-back.jpg'
 import birthdayCardFront from '../assets/creative/birthday-card-front.jpg'
 import dahiPamphletBack from '../assets/creative/dahi-health-pamphlet-back.jpeg'
@@ -141,6 +143,36 @@ export const siteContent = {
       text: 'A growing selection of digital work across frontend development, full-stack development, digital systems, and operational workflows.',
     },
     items: [
+      {
+        slug: 'weekflow',
+        name: 'WeekFlow',
+        tagline: 'Simplifying Weekly Work Reporting',
+        category: 'Productivity / Business Application',
+        description: 'WeekFlow is a web-based weekly reporting application that helps teams and individuals document their activities, track progress, record accomplishments, and maintain accountability through structured weekly reports.',
+        seoTitle: 'WeekFlow — Weekly Reporting Tool | Fareedah Hussain',
+        seoDescription: 'WeekFlow helps individuals and teams organise weekly work, track progress, document accomplishments, and create structured reports.',
+        purpose: 'Help individuals and teams organise weekly work, document accomplishments, track progress, and maintain accountability through structured weekly reports.',
+        tags: ['Weekly Reporting', 'Productivity', 'Progressive Web App'],
+        image: weekflowScreenshot,
+        logo: weekflowLogo,
+        imageAlt: 'WeekFlow application homepage',
+        visualType: 'weekflow',
+        visualTone: 'weekflow',
+        role: null,
+        features: [
+          'Weekly activity and progress reporting',
+          'Task and achievement documentation',
+          'Structured weekly reports',
+          'Supabase integration',
+          'Responsive user interface',
+          'PWA installation support',
+          'Offline functionality',
+        ],
+        technologies: ['React', 'TypeScript', 'Vite', 'Supabase', 'CSS', 'Progressive Web App (PWA)'],
+        highlights: [],
+        link: 'https://myweekflow.netlify.app/',
+        linkLabel: 'View Live Project',
+      },
       {
         slug: 'invomax',
         name: 'Invomax',

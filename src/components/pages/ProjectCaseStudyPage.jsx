@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
+import ProjectIdentityVisual from '../projects/ProjectIdentityVisual.jsx'
 
 function ProjectVisual({ project }) {
-  return <div className="case-visual">{project.image ? <img className="project-card-image project-logo" src={project.image} alt={project.imageAlt || `${project.name} logo`} /> : <div className="case-placeholder"><span>{project.category}</span><strong>Visual identity</strong></div>}</div>
+  return <div className={`case-visual visual-tone-${project.visualTone || 'default'}`}>{project.visualType === 'weekflow' ? <ProjectIdentityVisual project={project} /> : project.image ? <img className="project-card-image project-logo" src={project.image} alt={project.imageAlt || `${project.name} logo`} /> : <div className="case-placeholder"><span>{project.category}</span><strong>Visual identity</strong></div>}</div>
 }
 
 function OptionalList({ label, items = [] }) {
@@ -31,7 +32,7 @@ function ProjectCaseStudyPage({ projects }) {
   if (!project) return <section className="section-pad"><div className="shell"><p className="eyebrow">Project not found</p><h1>This project is not available.</h1><Link className="text-link" to="/projects">Back to Projects <span aria-hidden="true">↗</span></Link></div></section>
 
   return <div className="case-study-page">
-    <section className="section-pad case-intro"><div className="shell"><Link className="back-link" to="/projects">← Back to Projects</Link><p className="eyebrow">{project.category}</p><h1>{project.name}</h1><p className="case-role">{project.role}</p>{project.tagline && <p className="case-tagline">{project.tagline}</p>}</div></section>
+    <section className="section-pad case-intro"><div className="shell"><Link className="back-link" to="/projects">← Back to Projects</Link><p className="eyebrow">{project.category}</p><h1>{project.name}</h1>{project.role && <p className="case-role">{project.role}</p>}{project.tagline && <p className="case-tagline">{project.tagline}</p>}</div></section>
     <section className="section-pad case-body"><div className="shell case-grid"><ProjectVisual project={project} /><div className="case-information">
       <OptionalText label="Project overview" text={project.description} fullWidth />
       <OptionalText label="The problem" text={project.problem} fullWidth />
